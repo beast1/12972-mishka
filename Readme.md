@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Вячеслав Мельник](https://up.htmlacademy.ru/adaptive/9/user/12972).
-* Наставник: `Неизвестно`.
+* Наставник: [MYSELF](https://up.htmlacademy.ru/adaptive/9/user/12972).
 
 ---
 
