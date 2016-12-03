@@ -1,67 +1,80 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
+ <title>Mishka</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta charset="utf-8">
-  <title>Mishka</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  
+
   <header class="page-header">
-    <h1 class="logo">Mishka</h1>
-    <nav class="page-header__nav">
+    <nav class="page-header__nav  page-header__nav--closed">
       <ul class="page-header__nav-list">
         <li class="page-header__nav-item"></li>
         <li class="page-header__nav-item"></li>
         <li class="page-header__nav-item"></li>
       </ul>
     </nav>
+    <a class="logo" href="index.html">Mishka</a>
   </header>
 
-  
+
   <section class="catalog">
     <h1 class="catalog__title">Каталог товаров</h1>
-    
-    <div class="catalog__product">
-      <img class="catalog__product-img" src="#" alt="Веселый Зайчик-попрыгайчик" width="" height="">
-      <h2 class="catalog__product-title">Зайчик-попрыгайчик</h2>
-      <div class="catalog__product-descr">Рост 30см, вес 200 г</div>
-      <b class="catalog__product-price">1 200 руб.</b>
-    </div>
-    
-    <div class="catalog__product">
-      <img class="catalog__product-img" src="#" alt="Удобная Корзинка для белья" width="" height="">
-      <h2 class="catalog__product-title">Корзинка для белья</h2>
-      <div class="catalog__product-descr">Диаметр 15см, высота 10 см</div>
-      <b class="catalog__product-price">690 руб.</b>
-    </div>
-    
-    <div class="catalog__product">
-      <img class="catalog__product-img" src="#" alt="Большая корзинка для игрушек" width="" height="">
-      <h2 class="catalog__product-title">Большая корзинка для игрушек</h2>
-      <div class="catalog__product-descr">Диаметр 30см, высота 30 см</div>
-      <b class="catalog__product-price">1 500 руб.</b>
+
+    <div class="catalog__inner">
+      <div class="catalog__product">
+        <img class="catalog__product-img" src="img/photo-1-mobile@1x.jpg" alt="Веселый Зайчик-попрыгайчик" width="260" height="195">
+        <div class="catalog__product-details">
+          <h2 class="catalog__product-title">Зайчик-попрыгайчик</h2>
+          <div class="catalog__product-descr">Рост 30см, вес 200 г</div>
+          <b class="catalog__product-price">1 200 руб.</b>
+        </div>
+      </div>
+
+      <div class="catalog__product">
+        <img class="catalog__product-img" src="img/photo-2-mobile@1x.jpg" alt="Удобная Корзинка для белья" width="260" height="195">
+        <div class="catalog__product-details">
+          <h2 class="catalog__product-title">Корзинка для белья</h2>
+          <div class="catalog__product-descr">Диаметр 15см, высота 10 см</div>
+          <b class="catalog__product-price">690 руб.</b>
+        </div>
+      </div>
+
+      <div class="catalog__product">
+        <img class="catalog__product-img" src="img/photo-3-mobile@1x.jpg" alt="Большая корзинка для игрушек" width="260" height="195">
+        <div class="catalog__product-details">
+          <h2 class="catalog__product-title">Большая корзинка для игрушек</h2>
+          <div class="catalog__product-descr">Диаметр 30см, высота 30 см</div>
+          <b class="catalog__product-price">1 500 руб.</b>
+        </div>
+      </div>
     </div>
   </section>
-  
-  
-  
+
+
+
   <section class="production">
-    <h1 class="production__title">Процесс производства</h1>
-    <video class="production__video"></video>
-    <p class="production__descr">По просьбам наших любимых фолловеров мы 
-    сняли для вас подробное ведео о том, как появляются наши товары.</p>
-    <button class="production__order-btn">Сделать заказ</button>
+    <div class="production__inner">
+      <h1 class="production__title">Процесс производства</h1>
+      <video class="production__video"></video>
+      <p class="production__descr">По просьбам наших любимых фолловеров мы
+      сняли для вас подробное ведео о том, как появляются наши товары.</p>
+      <button class="production__order-btn">Сделать заказ</button>
+    </div>
   </section>
-  
-  
+
+
   <footer class="page-footer">
     <div class="social">
       <a class="social__inst" href="#">Instagramm</a>
       <a class="social__fb" href="#">Facebook</a>
       <a class="social__twit" href="#">Twitter</a>
     </div>
-    
+
     <div class="made-by">
       <h4 class="made-by__title">Разработано</h4>
     </div>
