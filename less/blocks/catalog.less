@@ -17,6 +17,10 @@
     margin-bottom: 30px;
   }
 
+  &__product-img {
+    display: block;
+  }
+
   &__product-details {
     border: 1px solid #ededed;
     padding-left: 27px;
@@ -35,5 +39,14 @@
     padding-bottom: 27px;
     margin-bottom: 27px;
     border-bottom: 1px solid #ededed;
+  }
+
+  &__product-price:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url(../img/icon-cart.svg) no-repeat 50%;
+    float: right;
+    margin-top: -3px;
   }
 }
