@@ -4,6 +4,7 @@
   border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
   background: #fff;
+  position: relative;
 }
 
 .logo {
@@ -15,15 +16,44 @@
   background: url(../img/logo-mobile.svg) no-repeat;
 }
 
-.page-header__nav--closed {
-  width: 20px;
-  height: 15px;
-  background: url(../img/icon-menu-open.svg) no-repeat;
-  float: right;
-  margin-right: 30px;
-  margin-top: 8px;
+.nav {
+  position: absolute;
+  width: 100%;
+  top: 80px;
 
-  ul {
-    display: none;
+  &__btn {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: -56px;
+    right: 30px;
+    font-size: 0;
+    cursor: pointer;
+
+    &--open {background: url(../img/icon-menu-open.svg) no-repeat 50%;}
+
+    &--closed {background: url(../img/icon-menu-close.svg) no-repeat 50%;}
   }
+
+  &__list {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+
+  &__item {
+    display: block;
+    border-top: 1px solid #ececec;
+
+    &:last-child {border-bottom: 1px solid #ececec;}
+  }
+
+  &__link {
+      display: block;
+      text-align: center;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
 }

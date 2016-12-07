@@ -1,3 +1,7 @@
+//VARIABLES
+@openSans: 'Open Sans', Arial, Helvetica, sans-serif;
+
+
 // MIXINS
 
 .btn() {
@@ -8,6 +12,7 @@
   padding-bottom: 18px;
   text-transform: uppercase;
   text-decoration: none;
+  .font(1.7rem; #444; @openSans; 600);
 }
 
 .inner() {
@@ -21,4 +26,12 @@
     border: none;
     border-bottom: 2px solid #000;
     padding-bottom: 15px;
+}
+
+.font(@size; @color; @family; @weight; @line-height: 1) {
+  font-size: @size;
+  color: @color;
+  line-height: @line-height;
+  font-family: @family;
+  font-weight: @weight;
 }
