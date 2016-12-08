@@ -183,7 +183,17 @@
     .font(1.7rem; #000; @openSans; 600);
   }
 
-  &__input-name::-webkit-input-placeholder {
-    .font(1.7rem; rgba(68, 68, 68, 0.31); @openSans; 400);
+
+  &__input-name::-webkit-input-placeholder,
+  &__email::-webkit-input-placeholder,
+  &__tel::-webkit-input-placeholder,
+  &__textarea::-webkit-input-placeholder {
+    .font(1.7rem; rgba(68, 68, 68, 0.3); @openSans; 400);
+  }
+
+
+  &__required-descr {
+    .font(1.4rem; #444; @openSans; 400);
+    text-align: center;
   }
 }
