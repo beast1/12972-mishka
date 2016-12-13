@@ -3,6 +3,7 @@
   width: 100%;
   top: 80px;
   z-index: 1;
+  border-top: 1px solid #ececec;
 }
 
 .main-nav__toggle {
@@ -21,12 +22,8 @@
   text-align: center;
   padding-top: 25px;
   padding-bottom: 25px;
-  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
   background-color: #fff;
-
-  &:last-child {
-    border-bottom: 1px solid #ececec;
-  }
 }
 
 .main-nav--hidden .main-nav__toggle {
@@ -47,3 +44,60 @@
 .main-nav__wrap-desktop {
   display: none;
 }
+
+
+/* MEDIA TABLET */
+
+@media @tablet {
+
+  .main-nav {
+    position: static;
+    height: 40px;
+    border: none;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__wrap-left {
+    position: absolute;
+    left: 40px;
+    top: 80px;
+    z-index: 1;
+  }
+
+  .main-nav__wrap-right {
+    float: right;
+    height: 90px;
+  }
+
+  .main-nav .main-nav__link {
+    display: inline-block;
+    vertical-align: top;
+    background-color: transparent;
+    border: none;
+  }
+
+  .main-nav .main-nav__link-search {
+    font-size: 0;
+    width: 82px;
+    height: 90px;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    padding: 0;
+    background: url(../../img/icon-search.svg) no-repeat 50%;
+  }
+
+  .main-nav .main-nav__link-cart {
+    width: 265px;
+    padding-bottom: 36px;
+    padding-top: 36px;
+    text-align: right;
+  }
+
+  .main-nav__wrap-left .main-nav__link{
+    margin-right: 35px;
+  }
+}
+
