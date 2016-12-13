@@ -2,9 +2,10 @@
   position: absolute;
   width: 100%;
   top: 80px;
+  z-index: 1;
 }
 
-.main-nav__btn {
+.main-nav__toggle {
   width: 21px;
   height: 21px;
   position: absolute;
@@ -12,36 +13,37 @@
   right: 30px;
   font-size: 0;
   cursor: pointer;
-
-  &--open {background: url(../img/icon-menu-open.svg) no-repeat 50%;}
-
-  &--close {background: url(../img/icon-menu-close.svg) no-repeat 50%;}
-}
-
-.main-nav__list-visible {
-  display: block;
-}
-
-.main-nav__list {
-  display: none;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-}
-
-
-
-.main-nav__item {
-  display: block;
-  border-top: 1px solid #ececec;
-
-  &:last-child {border-bottom: 1px solid #ececec;}
+  background: url(../img/icon-menu-open.svg) no-repeat 50%;
 }
 
 .main-nav__link {
-  display: block;
+  display: none;
   text-align: center;
   padding-top: 25px;
   padding-bottom: 25px;
+  border-top: 1px solid #ececec;
+  background-color: #fff;
+
+  &:last-child {
+    border-bottom: 1px solid #ececec;
+  }
+}
+
+.main-nav--hidden .main-nav__toggle {
+  background: url(../img/icon-menu-open.svg) no-repeat 50%;
+}
+.main-nav--visible .main-nav__toggle {
+  background: url(../img/icon-menu-close.svg) no-repeat 50%;
+}
+
+.main-nav--hidden .main-nav__link {
+  display: none;
+}
+
+.main-nav--visible .main-nav__link {
+  display: block;
+}
+
+.main-nav__wrap-desktop {
+  display: none;
 }
