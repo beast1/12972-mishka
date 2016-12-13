@@ -3,45 +3,49 @@
 
 <head>
   <title>Mishka</title>
+
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
-  <header class="page-header">
-   <a class="logo" href="index.html">Mishka</a>
+<header class="page-header">
+  <div class="logo">
+    <img src="img/logo-mobile.svg" alt="">
+  </div>
 
-    <nav class="nav  nav--hidden">
-      <div class="nav__btn  nav__btn--open  nav__btn--close">Меню</div>
+  <nav class="main-nav  main-nav--hidden">
+    <div class="main-nav__toggle">Меню</div>
 
-       <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link" href="#">Каталог товаров</a>
-        </li>
+    <div class="main-nav__wrap-left">
+      <a class="main-nav__link" href="#">Каталог товаров</a>
+      <a class="main-nav__link" href="#">Вязание на заказ</a>
+    </div>
 
-        <li class="nav__item">
-          <a class="nav__link" href="#">Вязание на заказ</a>
-        </li>
+    <div class="main-nav__wrap-right">
+      <a class="main-nav__link" href="#">Поиск по сайту</a>
+      <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+    </div>
 
-        <li class="nav__item">
-          <a class="nav__link" href="#">Поиск по сайту</a>
-        </li>
+    <div class="main-nav__wrap-desktop">
+      <a class="main-nav__link" href="#">Новые поступления</a>
+      <a class="main-nav__link" href="#">Распродажа</a>
+    </div>
+  </nav>
 
-        <li class="nav__item">
-          <a class="nav__link" href="#">Корзина: пока пуста</a>
-        </li>
-      </ul>
-    </nav>
-
-  </header>
+</header>
 
 
   <div class="intro">
     <div class="intro__title-wrap">
+      <p class="intro__free-delivery">Бесплатная доставка</p>
+
       <h2 class="intro__title">
         Милые штуки<br>
         ручной<br>
@@ -83,7 +87,7 @@
           <td class="product__details-cell">15 см</td>
         </tr>
       </table>
-      <img class="product__img" src="img/triple-set-mobile@1x.jpg" alt="Красивая вязаная корзинка" width="" height="">
+      <img class="product__img" src="img/triple-set-mobile@1x.jpg" alt="Красивая вязаная корзинка">
       <b class="product__price">Цена: 990 руб.</b>
      <div class="product__order-btn">Заказать</div>
      <!-- change tag to proper-->
@@ -116,13 +120,14 @@
         В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии
         сразу стали более стильными, а также набирают больше лайков!</p>
         <cite class="reviews__author">Анастасия Красильникова</cite>
+        <br>
         <cite class="reviews__author-mail">@misssssiskras</cite>
       </blockquote>
 
-      <nav class="reviews__nav">
+      <div class="reviews__nav">
         <div class="reviews__nav-prev">Назад</div>
         <div class="reviews__nav-next">Вперед</div>
-      </nav>
+      </div>
 
       <div class="reviews__write-btn" href="#">Написать</div>
     </div>
@@ -172,5 +177,21 @@
       <h4 class="made-by__title">Разработано</h4>
     </div>
   </footer>
+
+
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--hidden')) {
+        navMain.classList.remove('main-nav--hidden');
+        navMain.classList.add('main-nav--visible');
+      } else {
+        navMain.classList.add('main-nav--hidden');
+        navMain.classList.remove('main-nav--visible');
+      }
+    });
+  </script>
 </body>
 </html>

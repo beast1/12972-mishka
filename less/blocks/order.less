@@ -1,27 +1,27 @@
 .order {
   margin-bottom: 55px;
-
-  &__inner {
-    .inner();
-  }
-
-  &__title {
-    margin: 0;
-    margin-bottom: 30px;
-    padding-top: 75px;
-    padding-bottom: 75px;
-    text-align: center;
-    background-color: #f1f1f1;
-  }
-
-  &__descr {
-    margin-bottom: 30px;
-  }
+}
+.order__inner {
+  .inner();
 }
 
-.form {
+.order__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
 
-  &__item {
+.order__descr {
+  margin-bottom: 30px;
+}
+
+
+
+
+.form__item {
     margin: 0;
     margin-bottom: 30px;
     padding: 0;
@@ -30,71 +30,71 @@
     &:last-of-type{margin-bottom: 18px;}
   }
 
-  &__legend {
-    margin-bottom: 23px;
+.form__legend {
+  margin-bottom: 23px;
 
-    &:after {
-      content: '';
-      display: inline-block;
-      vertical-align: top;
-      height: 1px;
-      width: 120px;
-      background-color: #62d1ba;
-      margin-top: 8px;
-      margin-left: 27px;
-    }
-  }
-
-  &__radio-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  &__radio-item {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 13px;
-
-    &:last-child {margin-bottom: 0;}
-  }
-
-  &__label-name {
-    display: block;
-    margin-bottom: 20px;
-  }
-
-  &__input-name {
-    .input-text();
-    margin-bottom: 25px;
-
-    &:last-child {margin-bottom: 0;}
-  }
-
-  &__tel {.input-text();}
-
-  &__email {.input-text();}
-
-  &__textarea {
-    padding: 15px;
-    box-sizing: border-box;
-    width: 100%;
-    border: 2px solid #444;
-    display: block;
-    resize: none;
-  }
-
-
-
-  &__required-descr {
-    margin: 0;
-    margin-bottom: 30px;
-  }
-
-  &__submit {
-    .btn();
-    background-color: transparent;
-    display: block;
-    width: 100%;
+  &:after {
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    height: 1px;
+    width: 120px;
+    background-color: #62d1ba;
+    margin-top: 8px;
+    margin-left: 27px;
   }
 }
+
+.form__radio-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form__radio-item {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 13px;
+
+  &:last-child {margin-bottom: 0;}
+}
+
+.form__label-name {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.form__input-name {
+  .input-text();
+  margin-bottom: 25px;
+
+  &:last-child {margin-bottom: 0;}
+}
+
+.form__tel {.input-text();}
+
+.form__email {.input-text();}
+
+.form__textarea {
+  padding: 15px;
+  box-sizing: border-box;
+  width: 100%;
+  border: 2px solid #444;
+  display: block;
+  resize: none;
+}
+
+
+
+.form__required-descr {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.form__submit {
+  .btn();
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
