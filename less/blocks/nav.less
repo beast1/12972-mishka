@@ -2,6 +2,7 @@
   position: absolute;
   width: 100%;
   top: 80px;
+  left: 0;
   z-index: 1;
   border-top: 1px solid #ececec;
 }
@@ -10,8 +11,8 @@
   width: 21px;
   height: 21px;
   position: absolute;
-  top: -56px;
-  right: 30px;
+  top: -55px;
+  right: 40px;
   font-size: 0;
   cursor: pointer;
   background: url(../img/icon-menu-open.svg) no-repeat 50%;
@@ -62,7 +63,7 @@
 
   .main-nav__wrap-left {
     position: absolute;
-    left: 40px;
+    left: 50px;
     top: 80px;
     z-index: 1;
   }
@@ -100,4 +101,46 @@
     margin-right: 35px;
   }
 }
+
+
+
+@media @desktop {
+
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav__wrap-left {
+    position: static;
+    height: 90px;
+  }
+
+  .main-nav__wrap-left .main-nav__link {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-right: 36px;
+  }
+
+  .main-nav__wrap-left .main-nav__link:first-child {
+    border-right: 1px solid #ececec;
+  }
+
+  .main-nav__wrap-right {
+    position: static;
+  }
+
+  .main-nav__wrap-desktop {
+    display: block;
+    position: absolute;
+    top: 80px;
+    z-index: 1;
+  }
+
+  .main-nav__wrap-desktop .main-nav__link:first-child {
+    margin-right: 60px;
+  }
+
+}
+
 

@@ -6,6 +6,12 @@
 
 // MIXINS
 
+.clearfix() {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .btn() {
   display: block;
   text-align: center;
@@ -17,11 +23,12 @@
   .font(1.7rem; #444; @openSans; 600);
 }
 
-.inner() {
-  padding-left: 30px;
-  padding-right: 30px;
+.inner(@pl: 30px, @pr: 30px) {
+  padding-left: @pl;
+  padding-right: @pr;
+  max-width: 1050px;
+  margin: auto;
 }
-
 
 .input-text() {
     display: block;
@@ -33,9 +40,9 @@
 .font(@size; @color; @family; @weight; @line-height: 1) {
   font-size: @size;
   color: @color;
-  line-height: @line-height;
   font-family: @family;
   font-weight: @weight;
+  line-height: @line-height;
 }
 
 .container() {
