@@ -103,7 +103,14 @@
 }
 
 .about-us__features-item {
-  .font(1.7rem; #000; @openSans; 800);
+  .font(1.7rem; #000; @openSans; 600; 2rem);
+}
+
+
+@media @tablet {
+  .about-us__features-item {
+    font-size: 2rem;
+  }
 }
 
 
@@ -114,17 +121,35 @@
 }
 
 .reviews__text {
-  .font(1.5rem; #444; @openSans; 600; 30px);
+  .font(1.5rem; #444; @openSans; 400; 3rem);
 }
 
 .reviews__author {
-  .font(1.8rem; #000; @openSans; 800);
+  .font(1.8rem; #000; @openSans; 800; 2.4rem);
+  font-style: normal;
 }
 
 .reviews__author-mail {
-  .font(1.8rem; #444; @openSans; 600);
+  .font(1.8rem; #444; @openSans; 400; 3rem);
+  font-style: normal;
 }
 
+
+@media @tablet {
+  .reviews__title {
+    .font(4.3rem; #000; @openSans; 800; 5rem);
+  }
+  .reviews__text {
+    .font(1.7rem; #444; @openSans; 400; 3rem);
+  }
+}
+
+
+@media @desktop {
+  .reviews__title {
+    .font(5.3rem; #000; @openSans; 800; 5.7rem);
+  }
+}
 
 
 //CONTACT
@@ -134,10 +159,10 @@
 }
 
 .contact__details {
-  .font(1.5rem; #444; @openSans; 600; 30px);
+  .font(1.5rem; #444; @openSans; 400; 3rem);
 }
 
-.contact__mail {
+.contact__link-mail {
   text-decoration: none;
   color: #444;
   border-bottom: 1px solid #62d1ba;
@@ -145,6 +170,21 @@
 }
 
 
+@media @tablet {
+  .contact__title {
+    .font(4.3rem; #000; @openSans; 800; 5rem);
+  }
+
+  .contact__details {
+    .font(1.7rem; #444; @openSans; 400; 3rem);
+  }
+}
+
+@media @desktop {
+  .contact__title {
+    .font(5.3rem; #000; @openSans; 800; 5.7rem);
+  }
+}
 
 
 /* CATALOG.html */

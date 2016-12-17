@@ -1,7 +1,13 @@
 .page-footer {
   background-color: #f1f1f1;
-  padding-left: 30px;
-  padding-right: 30px;
+}
+
+.page-footer__inner {
+  .inner();
+}
+
+.page-footer__logo {
+  display: none;
 }
 
 .social {
@@ -52,6 +58,22 @@
     height: 35px;
     background: url(../img/logo-htmlacademy.svg) no-repeat 50%;
     margin-left: 20px;
+  }
+}
+
+
+@media @tablet {
+
+  .page-footer__inner {
+    .inner(50px, 50px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__logo {
+    display: block;
+    width: 180px;
   }
 }
 
