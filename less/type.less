@@ -1,14 +1,13 @@
 /* COMMON */
 
-//HEADER
-
 .main-nav__link {
   text-decoration: none;
-  .font(1.7rem; #000; @openSans; 800);
+  .font(1.7rem; #000; @openSans; 600);
 }
 
-
-//PAGE-FOOTER
+.free-delivery {
+  .font(1.5rem; #444; @openSans; 600);
+}
 
 .made-by__title {
   .font(1.9rem; #000; @openSans; 800);
@@ -21,10 +20,6 @@
 /* INDEX.html */
 
 //INTRO
-
-.intro__free-delivery {
-  .font(1.5rem; #444; @openSans; 600);
-}
 
 .intro__title {
   .font(2.7rem; #000; @openSans; 800);
@@ -189,36 +184,79 @@
 
 /* CATALOG.html */
 
-//CATALOG
-.catalog__title {
-  .font(2.7rem; #000; @openSans; 800);
+// CATALOG-INTRO
+.catalog-intro__title {
+  .font(2.7rem; #000; @openSans; 800; 3rem);
 }
 
+@media @tablet {
+
+  .catalog-intro__title {
+    .font(4.3rem; #000; @openSans; 800; 5rem);
+  }
+}
+
+@media @desktop {
+
+  .catalog-intro__title {
+    .font(5.3rem; #000; @openSans; 800; 5.7rem);
+  }
+}
+
+
+//CATALOG
 .catalog__product-title {
-  .font(1.7rem; #000; @openSans; 800);
+  .font(1.7rem; #000; @openSans; 800; 2.4rem);
 }
 
 .catalog__product-descr {
-  .font(1.3rem; #444; @openSans; 600);
+  .font(1.3rem; #444; @openSans; 600; 3rem);
 }
 
 .catalog__product-price {
-  .font(1.5rem; #000; @openSans; 800);
+  .font(1.5rem; #000; @openSans; 800; 2.4rem);
 }
+
+
+@media @tablet {
+
+  .catalog__product-title {
+    .font(2rem; #000; @openSans; 800; 2.4rem);
+  }
+
+  .catalog__product-descr {
+    .font(1.5rem; #444; @openSans; 600; 3rem);
+  }
+
+  .catalog__product-price {
+    .font(1.7rem; #000; @openSans; 800; 2.4rem);
+  }
+}
+
 
 
 
 //PRODUCTION
+
 .production__title {
-  .font(1.7rem; #000; @openSans; 800; 24px);
+  .font(1.7rem; #000; @openSans; 800; 2.4rem);
 }
 
 .production__descr {
-  .font(1.3rem; #444; @openSans; 600; 24px);
+  .font(1.3rem; #444; @openSans; 600; 2.4rem);
 }
 
 
+@media @tablet {
 
+  .production__title {
+    .font(2rem; #000; @openSans; 800; 2.4rem);
+  }
+
+  .production__descr {
+    .font(1.5rem; #444; @openSans; 600; 3rem);
+  }
+}
 
 
 /* FORM.html */
