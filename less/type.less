@@ -14,6 +14,24 @@
 }
 
 
+// INTRO
+.intro__title {
+  .font(2.7rem; #000; @openSans; 800; 3rem);
+}
+
+@media @tablet {
+
+  .intro__title {
+    .font(4.3rem; #000; @openSans; 800; 5rem);
+  }
+}
+
+@media @desktop {
+
+  .intro__title {
+    .font(5.3rem; #000; @openSans; 800; 5.7rem);
+  }
+}
 
 
 
@@ -21,11 +39,11 @@
 
 //INTRO
 
-.intro__title {
+.main-intro__title {
   .font(2.7rem; #000; @openSans; 800);
 }
 
-.intro__ware {
+.main-intro__ware {
   text-decoration: none;
   .font(1.9rem; #fff; @openSans; 800; 2.4rem);
 }
@@ -34,18 +52,18 @@
 
 @media @tablet {
 
-  .intro__title {
+  .main-intro__title {
     .font(4.3rem; #000; @openSans; 800; 5rem);
   }
 
-  .intro__ware {
+  .main-intro__ware {
     .font(2rem; #fff; @openSans; 800; 3rem);
   }
 }
 
 @media @desktop {
 
-  .intro__title {
+  .main-intro__title {
     .font(5.3rem; #000; @openSans; 800; 5.7rem);
   }
 }
@@ -184,26 +202,6 @@
 
 /* CATALOG.html */
 
-// CATALOG-INTRO
-.catalog-intro__title {
-  .font(2.7rem; #000; @openSans; 800; 3rem);
-}
-
-@media @tablet {
-
-  .catalog-intro__title {
-    .font(4.3rem; #000; @openSans; 800; 5rem);
-  }
-}
-
-@media @desktop {
-
-  .catalog-intro__title {
-    .font(5.3rem; #000; @openSans; 800; 5.7rem);
-  }
-}
-
-
 //CATALOG
 .catalog__product-title {
   .font(1.7rem; #000; @openSans; 800; 2.4rem);
@@ -263,12 +261,8 @@
 
 //ORDER
 
-.order__title {
-  .font(2.7rem; #231f20; @openSans; 800);
-}
-
 .order__descr {
-  .font(1.3rem; #444; @openSans; 600; 24px);
+  .font(1.3rem; #444; @openSans; 400; 2.4rem);
 }
 
 .form__legend {
@@ -291,4 +285,27 @@
 .form__required-descr {
   .font(1.4rem; #444; @openSans; 600);
   text-align: center;
+}
+
+@media @tablet {
+
+  .order__descr {
+    .font(1.7rem; #444; @openSans; 400; 3rem);
+  }
+
+  .form label {
+    .font(1.9rem; #000; @openSans; 800);
+  }
+
+  .form__input-name::-webkit-input-placeholder,
+  .form__email::-webkit-input-placeholder,
+  .form__tel::-webkit-input-placeholder,
+  .form__textarea::-webkit-input-placeholder {
+    .font(1.9rem; rgba(68, 68, 68, 0.3); @openSans; 600);
+  }
+
+  .form__required-descr {
+    .font(1.7rem; #444; @openSans; 400);
+    text-align: center;
+  }
 }

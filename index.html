@@ -50,24 +50,24 @@
   </header>
 
 
-  <div class="intro">
-    <div class="intro__inner">
+  <div class="main-intro">
+    <div class="main-intro__inner">
 
      <p class="free-delivery">Бесплатная доставка</p>
 
-      <div class="intro__title-wrap">
-        <h2 class="intro__title">
-          Милые штуки<br class="intro__br-1">
+      <div class="main-intro__title-wrap">
+        <h2 class="main-intro__title">
+          Милые штуки<br class="main-intro__br-1">
           ручной<br>
           работы для дома
         </h2>
       </div>
 
-      <div class="intro__options">
-        <a class="intro__ware  intro__ware-interior" href="#">
+      <div class="main-intro__options">
+        <a class="main-intro__ware  main-intro__ware-interior" href="#">
           Предметы<br> интерьера
         </a>
-        <a class="intro__ware  intro__ware-toys" href="#">
+        <a class="main-intro__ware  main-intro__ware-toys" href="#">
           Детские<br> игрушки
         </a>
       </div>
@@ -130,6 +130,7 @@
       </div>
     </div> <!-- inner -->
   </section>
+
 
 
   <section class="about-us">
@@ -271,20 +272,6 @@
     </div>
   </footer>
 
-
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--hidden')) {
-        navMain.classList.remove('main-nav--hidden');
-        navMain.classList.add('main-nav--visible');
-      } else {
-        navMain.classList.add('main-nav--hidden');
-        navMain.classList.remove('main-nav--visible');
-      }
-    });
-  </script>
+  <script src="js/script.js"></script>
 </body>
 </html>

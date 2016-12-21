@@ -51,13 +51,13 @@
   </header>
 
 
-  <div class="catalog-intro">
-    <div class="catalog-intro__inner">
+  <div class="intro">
+    <div class="intro__inner">
 
       <p class="free-delivery">Бесплатная доставка</p>
 
-      <div class="catalog-intro__title-wrap">
-        <h1 class="catalog-intro__title">Каталог товаров</h1>
+      <div class="intro__title-wrap">
+        <h1 class="intro__title">Каталог товаров</h1>
       </div>
 
     </div>
@@ -141,19 +141,6 @@
   </footer>
 
 
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--hidden')) {
-        navMain.classList.remove('main-nav--hidden');
-        navMain.classList.add('main-nav--visible');
-      } else {
-        navMain.classList.add('main-nav--hidden');
-        navMain.classList.remove('main-nav--visible');
-      }
-    });
-  </script>
+  <script src="js/script.js"></script>
 </body>
 </html>
