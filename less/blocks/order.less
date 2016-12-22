@@ -9,28 +9,39 @@
   margin-bottom: 30px;
 }
 
+.form__inner {
+  .inner();
+}
 
 .form__item {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 33px;
     padding: 0;
     border: none;
 
     &:last-of-type{margin-bottom: 18px;}
   }
 
+.form input {
+  background-color: transparent;
+}
+
 .form__legend {
+  position: relative;
+  padding-right: 20px;
   margin-bottom: 23px;
+  background-color: #fff;
 
   &:after {
     content: '';
-    display: inline-block;
-    vertical-align: top;
+    position: absolute;
+    top: 8px;
+    z-index: -99;
+    display: block;
     height: 1px;
-    width: 120px;
+    width: 260px;
     background-color: #62d1ba;
-    margin-top: 8px;
-    margin-left: 27px;
+
   }
 }
 
@@ -53,16 +64,28 @@
   margin-bottom: 20px;
 }
 
-.form__input-name {
-  .input-text();
-  margin-bottom: 25px;
+.form__flex {
+   margin-bottom: 25px;
 
-  &:last-child {margin-bottom: 0;}
+  &:last-of-type{margin-bottom: 0;}
 }
 
-.form__tel {.input-text();}
+.form__input-name {
+  .input-text();
+  padding-top: 5px;
+  width: 100%;
+}
 
-.form__email {.input-text();}
+.form__tel {
+  .input-text();
+  width: 100%;
+  margin-bottom: 33px;
+}
+
+.form__email {
+  .input-text();
+  width: 100%;
+}
 
 .form__textarea {
   padding: 15px;
@@ -85,6 +108,13 @@
   width: 100%;
 }
 
+.form__footer {
+  .inner();
+}
+
+
+
+//TABLET
 
 @media @tablet {
 
@@ -111,7 +141,8 @@
     &:after{display: none;}
   }
 
-  .form__radio-list {
+  .form__radio-list,
+  .form__left-padding{
     padding-left: 167px;
   }
 
@@ -124,5 +155,48 @@
 
   .form__color-item {
     min-width: 200px;
+  }
+
+  .form__flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: 50px;
+
+    &:last-of-child {margin-bottom: 0;}
+  }
+
+  .form__label-name {
+    margin-right: 20px;
+  }
+
+  .form__legend {
+    background-color: transparent;
+  }
+
+  .form__footer .form__left-padding {
+    padding: 0;
+    .inner(50px, 50px);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .form__submit {
+    order: -1;
+    width: 226px;
+  }
+}
+
+
+
+@media @desktop {
+
+  .form__color-list {
+    min-width: 600px;
+  }
+
+  .form__footer .form__left-padding {
+    padding-left: 167px;
   }
 }
