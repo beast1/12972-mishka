@@ -1,34 +1,37 @@
 .product {
-  padding-top: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
   margin-bottom: 35px;
-
-  &__title {
-    margin: 0;
-    margin-bottom: 5px;
-  }
-
-  &__caption {
-    margin-bottom: 15px;
-  }
-
-  &__descr {
-    margin-bottom: 35px;
-  }
 }
 
+.product__inner {
+  .inner();
+  padding-top: 30px;
+}
+
+.product__title {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.product__caption {
+  margin-bottom: 15px;
+}
+
+.product__descr {
+  margin-bottom: 35px;
+}
 
 .product__details {
   text-align: left;
+  width: 100%;
   margin-bottom: 30px;
 }
 
-
-.product__img {
+.product__descr-pic {
+  display: block;
+  width: 100%;
   margin-bottom: 30px;
+  text-align: center;
 }
-
 
 .product__price {
   display: block;
@@ -36,7 +39,109 @@
   margin-bottom: 25px;
 }
 
-
 .product__order-btn {
   .btn();
+}
+
+.product__caption-br {
+  display: none;
+}
+
+.product__pic {
+  display: none;
+}
+
+
+/* MEDIA */
+
+@media @tablet {
+
+  .product__inner {
+    .inner(50px, 50px);
+    padding-top: 55px;
+  }
+
+  .product__title-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+  }
+
+  .product__caption {
+    min-width: 165px;
+    text-align: center;
+    margin-bottom: 0;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .product__caption-br {
+    display: block;
+  }
+
+  .product__descr-wrap {
+    margin-right: 40px;
+  }
+
+  .product__details {
+    margin-bottom: 60px;
+  }
+
+  .product__descr-pic {
+    display: none;
+  }
+
+  .product__pic {
+    display: block;
+  }
+
+  .product__img {
+    width: 333px;
+    height: 405px;
+  }
+
+  .product__l-flex {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .product__descr {
+    margin-bottom: 55px;
+    margin-top: 0;
+  }
+
+  .product__details-cell {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ececec;
+  }
+
+  .product__price {
+    margin-bottom: 35px;
+  }
+}
+
+@media @desktop {
+
+  .product__title-wrap {
+    justify-content: flex-start;
+  }
+
+  .product__caption {
+    order: -1;
+  }
+
+  .product__l-flex {
+    padding-left: 165px;
+  }
+
+  .product__details {
+    margin-bottom: 100px;
+  }
+
+  .product__img {
+    width: 500px;
+    height: 515px;
+  }
 }

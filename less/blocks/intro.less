@@ -1,26 +1,50 @@
-.intro{
 
-  &__title-wrap {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background: url(../img/hero-mobile@1x.jpg) no-repeat 50%;
+.intro {
+  background-color: #f1f1f1;
+  margin-bottom: 30px;
+}
+
+.intro__inner {
+  .inner();
+  position: relative;
+}
+
+.intro__title-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+   min-height: 175px;
+}
+
+.intro__title {
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+@media @tablet {
+
+  .intro {
+    margin-bottom: 80px;
   }
 
-  &__title {
-    margin: 0;
-    text-align: center;
+  .intro__inner {
+    .inner (50px, 50px);
   }
 
-  &__ware {
-    display: block;
-    padding: 30px;
+  .intro__title-wrap {
+    min-height: 210px;
+  }
+}
 
-    &-interior {
-      background: #63d1bb url(../img/icon-interior.svg) no-repeat 85% 50%;
-    }
-    &-toys {
-      background: #56c3b2 url(../img/icon-toy.svg) no-repeat 87% 50%;
-    }
+@media @desktop {
+
+  .intro {
+    margin-bottom: 130px;
   }
 
+  .intro__title-wrap {
+    min-height: 240px;
+  }
 }

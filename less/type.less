@@ -1,41 +1,311 @@
-//INTRO
-.intro__ware {
-  color: #fff;
+/* COMMON */
+
+.main-nav__link {
+  text-decoration: none;
+  .font(1.7rem; #000; @openSans; 600);
 }
+
+.free-delivery {
+  .font(1.5rem; #444; @openSans; 600);
+}
+
+.made-by__title {
+  .font(1.9rem; #000; @openSans; 800);
+}
+
+
+// INTRO
+.intro__title {
+  .font(2.7rem; #000; @openSans; 800; 3rem);
+}
+
+@media @tablet {
+
+  .intro__title {
+    .font(4.3rem; #000; @openSans; 800; 5rem);
+  }
+}
+
+@media @desktop {
+
+  .intro__title {
+    .font(5.3rem; #000; @openSans; 800; 5.7rem);
+  }
+}
+
+
+
+/* INDEX.html */
+
+//INTRO
+
+.main-intro__title {
+  .font(2.7rem; #000; @openSans; 800);
+}
+
+.main-intro__ware {
+  text-decoration: none;
+  .font(1.9rem; #fff; @openSans; 800; 2.4rem);
+}
+
+
+
+@media @tablet {
+
+  .main-intro__title {
+    .font(4.3rem; #000; @openSans; 800; 5rem);
+  }
+
+  .main-intro__ware {
+    .font(2rem; #fff; @openSans; 800; 3rem);
+  }
+}
+
+@media @desktop {
+
+  .main-intro__title {
+    .font(5.3rem; #000; @openSans; 800; 5.7rem);
+  }
+}
+
+
+
+
 
 //PRODUCT
-.product {
 
-  &__caption {
-    text-transform: uppercase;
-    color: #63d1bb;
+.product__title {
+  .font(2.5rem; #000; @openSans; 800; 3rem);
+}
+
+.product__caption {
+  text-transform: uppercase;
+  .font(1.7rem; #63d1bb; @openSans; 800);
+}
+
+.product__descr {
+  .font(1.5rem; #444; @openSans; 400; 2.4rem);
+}
+
+.product__details {
+  .font(1.5rem; #444; @openSans; 400; 2rem);
+}
+
+.product__price {
+  .font(1.7rem; #444; @openSans; 800);
+}
+
+
+@media @tablet {
+
+  .product__title {
+    .font(4.3rem; #000; @openSans; 800; 5rem);
+  }
+
+  .product__descr {
+    .font(1.7rem; #444; @openSans; 400; 3rem);
   }
 }
 
+
+//ABOUT-US
+
+
+.about-us__title {
+  .font(2.5rem; #000; @openSans; 800);
+}
+
+.about-us__features-item {
+  .font(1.7rem; #000; @openSans; 600; 2rem);
+}
+
+
+@media @tablet {
+  .about-us__features-item {
+    font-size: 2rem;
+  }
+}
+
+
+//REVIEWS
+
+.reviews__title {
+  .font(2.5rem; #000; @openSans; 800);
+}
+
+.reviews__text {
+  .font(1.5rem; #444; @openSans; 400; 3rem);
+}
+
+.reviews__author {
+  .font(1.8rem; #000; @openSans; 800; 2.4rem);
+  font-style: normal;
+}
+
+.reviews__author-mail {
+  .font(1.8rem; #444; @openSans; 400; 3rem);
+  font-style: normal;
+}
+
+
+@media @tablet {
+  .reviews__title {
+    .font(4.3rem; #000; @openSans; 800; 5rem);
+  }
+  .reviews__text {
+    .font(1.7rem; #444; @openSans; 400; 3rem);
+  }
+}
+
+
+@media @desktop {
+  .reviews__title {
+    .font(5.3rem; #000; @openSans; 800; 5.7rem);
+  }
+}
+
+
+//CONTACT
+
+.contact__title {
+  .font(1.8rem; #000; @openSans; 800);
+}
+
+.contact__details {
+  .font(1.5rem; #444; @openSans; 400; 3rem);
+}
+
+.contact__link-mail {
+  text-decoration: none;
+  color: #444;
+  border-bottom: 1px solid #62d1ba;
+  padding-bottom: 4px;
+}
+
+
+@media @tablet {
+  .contact__title {
+    .font(4.3rem; #000; @openSans; 800; 5rem);
+  }
+
+  .contact__details {
+    .font(1.7rem; #444; @openSans; 400; 3rem);
+  }
+}
+
+@media @desktop {
+  .contact__title {
+    .font(5.3rem; #000; @openSans; 800; 5.7rem);
+  }
+}
+
+
+/* CATALOG.html */
 
 //CATALOG
-.catalog {
+.catalog__product-title {
+  .font(1.7rem; #000; @openSans; 800; 2.4rem);
+}
 
- &__product-title {
-    font-size: 20px;
+.catalog__product-descr {
+  .font(1.3rem; #444; @openSans; 600; 3rem);
+}
+
+.catalog__product-price {
+  .font(1.5rem; #000; @openSans; 800; 2.4rem);
+}
+
+
+@media @tablet {
+
+  .catalog__product-title {
+    .font(2rem; #000; @openSans; 800; 2.4rem);
+  }
+
+  .catalog__product-descr {
+    .font(1.5rem; #444; @openSans; 600; 3rem);
+  }
+
+  .catalog__product-price {
+    .font(1.7rem; #000; @openSans; 800; 2.4rem);
   }
 }
+
+
 
 
 //PRODUCTION
-.production {
 
-  &__title {
-    font-size: 17px;
+.production__title {
+  .font(1.7rem; #000; @openSans; 800; 2.4rem);
+}
+
+.production__descr {
+  .font(1.3rem; #444; @openSans; 600; 2.4rem);
+}
+
+
+@media @tablet {
+
+  .production__title {
+    .font(2rem; #000; @openSans; 800; 2.4rem);
+  }
+
+  .production__descr {
+    .font(1.5rem; #444; @openSans; 600; 3rem);
   }
 }
 
-//FORM
 
-.form {
+/* FORM.html */
 
-  &__legend {
-    color: #63d1bb;
-    text-transform: uppercase;
+//ORDER
+
+.order__descr {
+  .font(1.3rem; #444; @openSans; 400; 2.4rem);
+}
+
+.form__legend {
+  .font(1.7rem; #63d1bb; @openSans; 800);
+  text-transform: uppercase;
+}
+
+.form label {
+  .font(1.7rem; #000; @openSans; 800);
+}
+
+.form__input-name::-webkit-input-placeholder,
+.form__email::-webkit-input-placeholder,
+.form__tel::-webkit-input-placeholder,
+.form__textarea::-webkit-input-placeholder {
+  .font(1.7rem; rgba(68, 68, 68, 0.3); @openSans; 600);
+}
+
+
+.form__required-descr {
+  .font(1.4rem; #444; @openSans; 600);
+  text-align: center;
+}
+
+@media @tablet {
+
+  .order__descr {
+    .font(1.7rem; #444; @openSans; 400; 3rem);
+  }
+
+  .form label {
+    .font(1.9rem; #000; @openSans; 800);
+  }
+
+  .form__input-name::-webkit-input-placeholder,
+  .form__email::-webkit-input-placeholder,
+  .form__tel::-webkit-input-placeholder,
+  .form__textarea::-webkit-input-placeholder {
+    .font(1.9rem; rgba(68, 68, 68, 0.3); @openSans; 600);
+  }
+
+  .form__required-descr {
+    .font(1.7rem; #444; @openSans; 400);
+    text-align: center;
   }
 }

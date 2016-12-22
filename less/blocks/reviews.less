@@ -1,40 +1,119 @@
-.reviews {
-  padding-left: 30px;
-  padding-right: 30px;
+.reviews__inner {
+  .inner();
   padding-bottom: 42px;
+}
 
-  &__title {
-    margin: 0;
+.reviews__title {
+  margin: 0;
+}
+
+.reviews__item {
+  padding: 0;
+
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.reviews__cite-wrap {
+  margin-bottom: 35px;
+}
+
+.reviews__author,
+.reviews__author-mail {
+  display: block;
+}
+
+.reviews__nav {
+  font-size: 0;
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.reviews__nav-prev,
+.reviews__nav-next {
+  display: inline-block;
+  vertical-align: middle;
+
+  border: 1px solid #ececec;
+  width: 129px;
+  height: 50px;
+
+  background: url(../img/icon-left-arrow.svg) no-repeat 50%;
+}
+
+.reviews__nav-next {
+  width: 128px;
+  margin-left: -1px;
+  background: url(../img/icon-right-arrow.svg) no-repeat 50%;
+}
+
+.reviews__btn,
+.reviews__header-btn {
+  .btn();
+}
+
+.reviews__header-btn {
+  display: none;
+}
+
+
+
+
+@media @tablet {
+
+  .reviews {
+    background: url(../img/review@1x.jpg) no-repeat 0;
   }
 
-  &__item {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 35px;
+  .reviews__inner {
+    .inner(50px, 50px);
+    padding-top: 80px;
   }
 
-  &__nav {
-    font-size: 0;
-    margin-bottom: 38px;
-
-    &-prev,
-    &-next{
-      display: inline-block;
-      vertical-align: middle;
-      border: 1px solid #ececec;
-      width: 129px;
-      height: 50px;
-      background: url(../img/icon-left-arrow.svg) no-repeat 50%;
-    }
-    &-next {
-      width: 128px;
-      margin-left: -1px;
-      background: url(../img/icon-right-arrow.svg) no-repeat 50%;
-    }
-   } // .reviews__nav
-
-  &__write-btn {
-    .btn();
+  .reviews__btn {
+    display: none;
   }
 
-} // .reviews
+  .reviews__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 50px;
+  }
+
+  .reviews__header-btn {
+    display: block;
+    min-width: 170px;
+  }
+
+  .reviews__item {
+    margin-bottom: 0;
+    &:after { .clearfix(); }
+  }
+
+  .reviews__text {
+    margin-bottom: 50px;
+  }
+
+  .reviews__cite-wrap {
+    float: left;
+  }
+
+  .reviews__nav {
+    float: right;
+  }
+}
+
+
+@media @desktop {
+
+  .reviews {
+    max-width: 1050px;
+    margin: auto;
+  }
+
+  .reviews__left-padding {
+    padding-left: 165px;
+  }
+}

@@ -4,26 +4,49 @@
   border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
   background: #fff;
+  position: relative;
+}
+
+.page-header__inner {
+  .inner();
 }
 
 .logo {
-  display: block;
-  font-size: 0;
   width: 95px;
   height: 40px;
   margin: 0 auto;
-  background: url(../img/logo-mobile.svg) no-repeat;
 }
 
-.page-header__nav--closed {
-  width: 20px;
-  height: 15px;
-  background: url(../img/icon-menu-open.svg) no-repeat;
-  float: right;
-  margin-right: 30px;
-  margin-top: 8px;
 
-  ul {
-    display: none;
+/* MEDIA TABLET */
+
+@media @tablet {
+
+  .page-header {
+    height: 90px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top: none;
+  }
+
+  .page-header__inner {
+    .inner(50px, 50px);
+  }
+
+  .logo {
+    float: left;
+    margin-top: 25px;
+  }
+}
+
+@media @desktop {
+
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    margin-top: -20px;
+    margin-left: -20px;
   }
 }

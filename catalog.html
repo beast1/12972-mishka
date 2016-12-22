@@ -2,74 +2,128 @@
 <html lang="ru">
 
 <head>
- <title>Mishka</title>
+  <title>Mishka</title>
+
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 
 <body>
 
   <header class="page-header">
-    <nav class="page-header__nav  page-header__nav--closed">
-      <ul class="page-header__nav-list">
-        <li class="page-header__nav-item"></li>
-        <li class="page-header__nav-item"></li>
-        <li class="page-header__nav-item"></li>
-      </ul>
-    </nav>
-    <a class="logo" href="index.html">Mishka</a>
+    <div class="page-header__inner">
+
+      <div class="logo">
+        <img src="img/logo-mobile.svg" alt="">
+      </div>
+
+
+      <nav class="main-nav  main-nav--hidden">
+        <div class="main-nav__toggle">Меню</div>
+
+        <div class="main-nav__wrap-left">
+          <a class="main-nav__link" href="#">Каталог товаров</a>
+          <a class="main-nav__link" href="#">Вязание на заказ</a>
+        </div>
+
+        <div class="main-nav__wrap-right">
+          <a class="main-nav__link  main-nav__link-search" href="#">
+            Поиск по сайту
+          </a>
+          <a class="main-nav__link  main-nav__link-cart" href="#">
+            Корзина: пока пуста
+          </a>
+        </div>
+
+        <div class="main-nav__wrap-desktop">
+          <a class="main-nav__link" href="#">Новые поступления</a>
+          <a class="main-nav__link" href="#">Распродажа</a>
+        </div>
+      </nav>
+
+    </div>
   </header>
 
 
-  <section class="catalog">
-    <h1 class="catalog__title">Каталог товаров</h1>
+  <div class="intro">
+    <div class="intro__inner">
 
-    <div class="catalog__inner">
-      <div class="catalog__product">
-        <img class="catalog__product-img" src="img/photo-1-mobile@1x.jpg" alt="Веселый Зайчик-попрыгайчик" width="260" height="195">
-        <div class="catalog__product-details">
-          <h2 class="catalog__product-title">Зайчик-попрыгайчик</h2>
-          <div class="catalog__product-descr">Рост 30см, вес 200 г</div>
-          <b class="catalog__product-price">1 200 руб.</b>
-        </div>
+      <p class="free-delivery">Бесплатная доставка</p>
+
+      <div class="intro__title-wrap">
+        <h1 class="intro__title">Каталог товаров</h1>
       </div>
 
-      <div class="catalog__product">
-        <img class="catalog__product-img" src="img/photo-2-mobile@1x.jpg" alt="Удобная Корзинка для белья" width="260" height="195">
-        <div class="catalog__product-details">
-          <h2 class="catalog__product-title">Корзинка для белья</h2>
-          <div class="catalog__product-descr">Диаметр 15см, высота 10 см</div>
-          <b class="catalog__product-price">690 руб.</b>
-        </div>
-      </div>
-
-      <div class="catalog__product">
-        <img class="catalog__product-img" src="img/photo-3-mobile@1x.jpg" alt="Большая корзинка для игрушек" width="260" height="195">
-        <div class="catalog__product-details">
-          <h2 class="catalog__product-title">Большая корзинка для игрушек</h2>
-          <div class="catalog__product-descr">Диаметр 30см, высота 30 см</div>
-          <b class="catalog__product-price">1 500 руб.</b>
-        </div>
-      </div>
     </div>
+  </div>
+
+
+
+  <section class="catalog">
+      <div class="catalog__inner">
+
+
+        <div class="catalog__product">
+          <img class="catalog__product-img" src="img/photo-1-mobile@1x.jpg" alt="Веселый Зайчик-попрыгайчик" width="260" height="195">
+
+          <div class="catalog__product-details">
+            <h2 class="catalog__product-title">Зайчик-попрыгайчик</h2>
+            <div class="catalog__product-descr">Рост 30см, вес 200 г</div>
+            <b class="catalog__product-price">1 200 руб.</b>
+          </div>
+        </div>
+
+
+        <div class="catalog__product">
+          <img class="catalog__product-img" src="img/photo-2-mobile@1x.jpg" alt="Удобная Корзинка для белья" width="260" height="195">
+
+          <div class="catalog__product-details">
+            <h2 class="catalog__product-title">Корзинка для белья</h2>
+            <div class="catalog__product-descr">Диаметр 15см, высота 10 см</div>
+            <b class="catalog__product-price">690 руб.</b>
+          </div>
+        </div>
+
+
+        <div class="catalog__product">
+          <img class="catalog__product-img" src="img/photo-3-mobile@1x.jpg" alt="Большая корзинка для игрушек" width="260" height="195">
+
+          <div class="catalog__product-details">
+            <h2 class="catalog__product-title">Большая корзинка для игрушек</h2>
+            <div class="catalog__product-descr">Диаметр 30см, высота 30 см</div>
+            <b class="catalog__product-price">1 500 руб.</b>
+          </div>
+        </div>
+
+
+      </div>
   </section>
 
 
 
   <section class="production">
     <div class="production__inner">
-      <div class="production__title-wrap">
-        <h1 class="production__title">Процесс производства</h1>
-      </div>
-    </div>
-      <video class="production__video" width="260" height="150">
 
-      </video>
-    <div class="production__inner">
-      <p class="production__descr">По просьбам наших любимых фолловеров мы
-      сняли для вас подробное ведео о том, как появляются наши товары.</p>
-      <a class="production__order-btn" href="#">Сделать заказ</a>
+      <h1 class="production__title">
+        Процесс <br class="production__title-br">
+        производства
+      </h1>
+
+      <video class="production__video" width="260" height="150"></video>
+
+      <div class="production__descr-wrap">
+        <h1 class="production__title">Процесс <br> производства </h1>
+        <p class="production__descr">По просьбам наших любимых фолловеров мы
+        сняли для вас подробное ведео о том, как появляются наши товары.</p>
+        <a class="production__order-btn" href="#">Сделать заказ</a>
+      </div>
+
     </div>
   </section>
 
@@ -85,5 +139,8 @@
       <h4 class="made-by__title">Разработано</h4>
     </div>
   </footer>
+
+
+  <script src="js/script.js"></script>
 </body>
 </html>

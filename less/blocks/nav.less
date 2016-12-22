@@ -1,0 +1,146 @@
+.main-nav {
+  position: absolute;
+  width: 100%;
+  top: 80px;
+  left: 0;
+  z-index: 1;
+  border-top: 1px solid #ececec;
+}
+
+.main-nav__toggle {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: -55px;
+  right: 40px;
+  font-size: 0;
+  cursor: pointer;
+  background: url(../img/icon-menu-open.svg) no-repeat 50%;
+}
+
+.main-nav__link {
+  display: none;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+  background-color: #fff;
+}
+
+.main-nav--hidden .main-nav__toggle {
+  background: url(../img/icon-menu-open.svg) no-repeat 50%;
+}
+.main-nav--visible .main-nav__toggle {
+  background: url(../img/icon-menu-close.svg) no-repeat 50%;
+}
+
+.main-nav--hidden .main-nav__link {
+  display: none;
+}
+
+.main-nav--visible .main-nav__link {
+  display: block;
+}
+
+.main-nav__wrap-desktop {
+  display: none;
+}
+
+
+/* MEDIA TABLET */
+
+@media @tablet {
+
+  .main-nav {
+    position: static;
+    height: 40px;
+    border: none;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__wrap-left {
+    position: absolute;
+    left: 50px;
+    top: 80px;
+    z-index: 1;
+  }
+
+  .main-nav__wrap-right {
+    float: right;
+    height: 90px;
+  }
+
+  .main-nav .main-nav__link {
+    display: inline-block;
+    vertical-align: top;
+    background-color: transparent;
+    border: none;
+  }
+
+  .main-nav .main-nav__link-search {
+    font-size: 0;
+    width: 82px;
+    height: 90px;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    padding: 0;
+    background: url(../../img/icon-search.svg) no-repeat 50%;
+  }
+
+  .main-nav .main-nav__link-cart {
+    width: 265px;
+    padding-bottom: 36px;
+    padding-top: 36px;
+    text-align: right;
+  }
+
+  .main-nav__wrap-left .main-nav__link{
+    margin-right: 35px;
+  }
+}
+
+
+
+@media @desktop {
+
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav__wrap-left {
+    position: static;
+    height: 90px;
+  }
+
+  .main-nav__wrap-left .main-nav__link {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-right: 36px;
+  }
+
+  .main-nav__wrap-left .main-nav__link:first-child {
+    border-right: 1px solid #ececec;
+  }
+
+  .main-nav__wrap-right {
+    position: static;
+  }
+
+  .main-nav__wrap-desktop {
+    display: block;
+    position: absolute;
+    top: 80px;
+    z-index: 1;
+  }
+
+  .main-nav__wrap-desktop .main-nav__link:first-child {
+    margin-right: 60px;
+  }
+
+}
+
+
