@@ -1,10 +1,6 @@
-.about-us {
-  margin-bottom: 57px;
-}
+.about-us { margin-bottom: 57px; }
 
-.about-us__inner {
-  .inner();
-}
+.about-us__inner { .inner(); }
 
 .about-us__title {
   margin: 0;
@@ -17,9 +13,7 @@
   padding: 0;
 }
 
-.about-us__features-item {
-  margin-bottom: 20px;
-}
+.about-us__features-item { margin-bottom: 20px; }
 
 .about-us__features-item:before {
   content: '';
@@ -55,17 +49,14 @@
 
 
 @media @tablet {
-  .about-us__inner {
-    .inner(50px, 50px);
-  }
 
-  .about-us__title {
-    margin-bottom: 45px;
-  }
+  .about-us { margin-bottom: 75px; }
 
-  .about-us__features {
-    display: flex;
-  }
+  .about-us__inner { .inner(50px, 50px); }
+
+  .about-us__title { margin-bottom: 45px; }
+
+  .about-us__features { display: flex; }
 
   .about-us__features-group {
     width: 320px;
@@ -76,6 +67,8 @@
 
   .about-us__features-item {
     margin-bottom: 55px;
+
+    &:last-child { margin-bottom: 0; }
   }
 }
 
