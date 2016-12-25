@@ -1,10 +1,19 @@
 .product {
   margin-bottom: 35px;
+
+  &:after {
+    .bot-border--wave();
+    margin-top: 35px;
+  }
 }
 
 .product__inner {
   .inner();
   padding-top: 30px;
+}
+
+.product__title-wrap {
+  margin-bottom: 30px;
 }
 
 .product__title {
@@ -17,19 +26,27 @@
 }
 
 .product__descr {
-  margin-bottom: 35px;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .product__details {
   text-align: left;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
+  border-collapse: collapse;
+}
+
+.product__details-cell {
+  padding-top: 13px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #ececec;
 }
 
 .product__descr-pic {
   display: block;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   text-align: center;
 }
 

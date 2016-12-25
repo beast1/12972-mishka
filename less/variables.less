@@ -14,13 +14,18 @@
 
 .btn() {
   display: block;
-  text-align: center;
+  max-width: 260px;
+  margin: auto;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+
   border: 2px solid #444;
-  padding-top: 18px;
-  padding-bottom: 18px;
+
+  .font(1.7rem; #444; @openSans; 600);
   text-transform: uppercase;
   text-decoration: none;
-  .font(1.7rem; #444; @openSans; 600);
+  text-align: center;
 }
 
 .inner(@pl: 30px, @pr: 30px) {
@@ -45,16 +50,10 @@
   line-height: @line-height;
 }
 
-.container() {
-  width: 320px;
-  margin: 0 auto;
 
-  @media @tablet-width {
-    width: 640px;
-  }
-
-  @media @desktop-width {
-    width: 960px;
-  }
+.bot-border--wave() {
+  content: '';
+  display: block;
+  height: 10px;
+  background: url(../img/wave-border.png) repeat-x 50%;
 }
-
