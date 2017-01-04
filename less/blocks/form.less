@@ -42,10 +42,6 @@
   margin-bottom: 13px;
 
   &:last-child {margin-bottom: 0;}
-
-  input {
-    display: none;
-  }
 }
 
 .form__label-name {
@@ -103,8 +99,33 @@
 
 //checkbox customization
 
-.form__radio-label {
+.form__radio-item{
 
+  input {
+    display: none;
+
+    &:checked + .form__radio-label:before{
+        background: radial-gradient(ellipse at center, #62d1ba 33%, #fff 36%);
+    }
+  }
+
+}
+
+
+.form__radio-label {
+  cursor: pointer;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    width: 34px;
+    height: 34px;
+    border: 2px solid #444;
+    border-radius: 50%;
+    cursor: pointer;
+  }
 }
 
 
