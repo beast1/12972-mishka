@@ -11,9 +11,17 @@
 
 .form input { background-color: transparent; }
 
+.form__input-name::-webkit-input-placeholder,
+.form__email::-webkit-input-placeholder,
+.form__tel::-webkit-input-placeholder,
+.form__textarea::-webkit-input-placeholder {
+  padding-left: 20px;
+}
+
 .form__legend {
   position: relative;
   padding-right: 20px;
+  padding-left: 0;
   margin-bottom: 30px;
   background-color: #fff;
 
@@ -152,28 +160,40 @@
 
 
 
-//TABLET
+//------- TABLET ----------//
+
 
 @media @tablet {
 
   .form__inner {
     display: flex;
     justify-content: flex-start;
+    align-items: baseline;
+
     .inner(50px, 50px);
     padding-bottom: 50px;
     padding-top: 50px;
   }
 
+  .form__inner-tel { padding-bottom: 10px; }
+
+  .form__inner-email { padding-top: 0; }
+
   .form__item:nth-child(2n+2) { background-color: #f1f1f1; }
 
   .form__legend {
-    margin-right: 0;
+    margin: 0;
     padding-right: 0;
     background-color: transparent;
 
     min-width: 160px;
 
     &:after{display: none;}
+  }
+
+  .form__legend--type {
+    align-self: flex-start;
+    padding-top: 10px;
   }
 
   .form__name-wrap,
@@ -190,18 +210,18 @@
     flex-wrap: wrap;
   }
 
-  .form__color-item { min-width: 200px; }
+  .form__color-item { min-width: 220px; }
 
   .form__flex {
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 
     &:last-of-child { margin-bottom: 0; }
   }
 
-  .form__label-name { margin-right: 20px; }
+  .form__label-name { margin-right: 25px; }
 
   .form__footer { .inner(50px, 50px); }
 
@@ -221,14 +241,31 @@
 }
 
 
+//----------------- DESKTOP ------------------//
+
 
 @media @desktop {
 
-  .form__color-list {
-    min-width: 600px;
+  .form__inner,
+  .form__footer {
+    width: 815px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  .form__footer {
-    padding-left: 167px;
+  .form__btn-wrap {
+    padding-left: 115px;
+  }
+
+  .form__legend {
+    min-width: 115px;
+  }
+
+  .form__name-wrap,
+  .form__tel-wrap,
+  .form__email-wrap,
+  .form__textarea-wrap,
+  .form__color-list {
+    min-width: 700px;
   }
 }
