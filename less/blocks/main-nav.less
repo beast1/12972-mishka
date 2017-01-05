@@ -1,17 +1,17 @@
 .main-nav {
   position: absolute;
   width: 100%;
-  top: 80px;
+  top: 71px;
   left: 0;
   z-index: 1;
   border-top: 1px solid #ececec;
 }
 
 .main-nav__toggle {
-  width: 21px;
-  height: 21px;
+  width: 20px;
+  height: 16px;
   position: absolute;
-  top: -55px;
+  top: -45px;
   right: 40px;
   font-size: 0;
   cursor: pointer;
@@ -21,8 +21,8 @@
 .main-nav__link {
   display: none;
   text-align: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   border-bottom: 1px solid #ececec;
   background-color: #fff;
 }
@@ -87,7 +87,7 @@
     border-left: 1px solid #ececec;
     border-right: 1px solid #ececec;
     padding: 0;
-    background: url(../../img/icon-search.svg) no-repeat 50%;
+    background: url(../img/icon-search.svg) no-repeat 50%;
   }
 
   .main-nav .main-nav__link-cart {
@@ -119,11 +119,17 @@
   .main-nav__wrap-left .main-nav__link {
     padding-top: 36px;
     padding-bottom: 36px;
-    padding-right: 36px;
+    padding-right: 45px;
   }
 
   .main-nav__wrap-left .main-nav__link:first-child {
     border-right: 1px solid #ececec;
+    margin-right: 0;
+  }
+
+  .main-nav__wrap-left .main-nav__link:last-child {
+    margin-right: 0;
+    padding-left: 35px;
   }
 
   .main-nav__wrap-right {
@@ -138,7 +144,7 @@
   }
 
   .main-nav__wrap-desktop .main-nav__link:first-child {
-    margin-right: 60px;
+    margin-right: 52px;
   }
 
 }

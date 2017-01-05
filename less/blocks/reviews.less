@@ -1,22 +1,34 @@
-.reviews__inner {
-  .inner();
-  padding-bottom: 42px;
+.reviews {
+  margin-bottom: 40px;
+
+  &:after {
+    content: '';
+    display: block;
+    height: 15px;
+    background: url(../img/wave-border__mobile.png) repeat-x 50%;
+    margin-top: 45px;
+  }
 }
 
-.reviews__title {
-  margin: 0;
-}
+.reviews__inner { .inner(); }
+
+.reviews__header { margin-bottom: 30px; }
+
+.reviews__title { margin: 0; }
 
 .reviews__item {
   padding: 0;
 
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 38px;
 }
 
-.reviews__cite-wrap {
-  margin-bottom: 35px;
+.reviews__text {
+  margin: 0;
+  margin-bottom: 32px;
 }
+
+.reviews__cite-wrap { margin-bottom: 35px; }
 
 .reviews__author,
 .reviews__author-mail {
@@ -52,27 +64,27 @@
   .btn();
 }
 
-.reviews__header-btn {
-  display: none;
-}
+.reviews__header-btn { display: none; }
 
 
 
 
 @media @tablet {
 
-  .reviews {
-    background: url(../img/review@1x.jpg) no-repeat 0;
+  .reviews:after {
+    margin-top: 68px;
+    background: url(../img/wave-border__tablet.png) repeat-x 50%;
   }
 
   .reviews__inner {
     .inner(50px, 50px);
     padding-top: 80px;
+    padding-bottom: 50px;
+
+    background: url(../img/review@1x.jpg) no-repeat 0 0;
   }
 
-  .reviews__btn {
-    display: none;
-  }
+  .reviews__btn { display: none; }
 
   .reviews__header {
     display: flex;
@@ -84,36 +96,40 @@
 
   .reviews__header-btn {
     display: block;
-    min-width: 170px;
+    min-width: 171px;
+    margin: 0;
   }
 
   .reviews__item {
     margin-bottom: 0;
+
     &:after { .clearfix(); }
   }
 
-  .reviews__text {
-    margin-bottom: 50px;
-  }
+  .reviews__text { margin-bottom: 50px; }
 
   .reviews__cite-wrap {
     float: left;
+    margin-bottom: 0;
   }
 
   .reviews__nav {
     float: right;
+    margin-bottom: 0;
   }
+
 }
 
 
 @media @desktop {
 
-  .reviews {
+  .reviews { margin-bottom: 70px; }
+
+  .reviews__inner {
     max-width: 1050px;
     margin: auto;
   }
 
-  .reviews__left-padding {
-    padding-left: 165px;
-  }
+  .reviews__left-padding { padding-left: 165px; }
+
 }

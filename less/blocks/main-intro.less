@@ -1,5 +1,6 @@
 .main-intro {
   background-color: #f9f9f9;
+  margin-bottom: 30px;
 }
 
 .free-delivery {
@@ -8,6 +9,7 @@
 
 .main-intro__title-wrap {
   min-height: 280px;
+  width: 100%;
 
   display: flex;
   justify-content: center;
@@ -23,7 +25,7 @@
 
 .main-intro__ware {
   display: block;
-  padding: 30px;
+  padding: 27px;
 }
 
 .main-intro__ware-interior {
@@ -39,6 +41,10 @@
 
 @media @tablet {
 
+  .main-intro {
+    margin-bottom: 55px;
+  }
+
   .main-intro__inner {
     .inner(50px, 50px);
     position: relative;
@@ -47,7 +53,7 @@
   .main-intro__title-wrap {
     min-height: 625px;
     background-size: cover;
-    background-position: 50% 100px;
+    background-position: 50% 33px;
   }
 
   .main-intro__title {
@@ -71,7 +77,7 @@
     position: relative;
   }
 
-    .main-intro__options::before{
+  .main-intro__options::before{
     content: "";
     position: absolute;
     left: 0;
@@ -83,6 +89,7 @@
     background-image:
       radial-gradient(circle at 10px -5px, transparent 12px, #fff 13px);
   }
+
   .main-intro__options::after{
     content: "";
     position: absolute;
