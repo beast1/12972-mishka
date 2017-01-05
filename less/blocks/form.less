@@ -14,7 +14,7 @@
 .form__legend {
   position: relative;
   padding-right: 20px;
-  margin-bottom: 23px;
+  margin-bottom: 30px;
   background-color: #fff;
 
   &:after {
@@ -39,7 +39,7 @@
 .form__radio-item {
   margin: 0;
   padding: 0;
-  margin-bottom: 13px;
+  margin-bottom: 20px;
 
   &:last-child {margin-bottom: 0;}
 }
@@ -51,7 +51,6 @@
 
 .form__flex {
    margin-bottom: 25px;
-
   &:last-of-type{margin-bottom: 0;}
 }
 
@@ -100,12 +99,18 @@
 //checkbox customization
 
 .form__radio-item{
+  .clearfix();
 
   input {
     display: none;
 
-    &:checked + .form__radio-label:before{
-        background: radial-gradient(ellipse at center, #62d1ba 33%, #fff 36%);
+    &:checked + .form__radio-label:before {
+      background: radial-gradient(ellipse at center, #62d1ba 33%, #fff 36%);
+    }
+
+    &:checked + .form__checkbox-label:before {
+      background: url(../img/icon-tick.svg) no-repeat 50%;
+      background-size: 70%;
     }
   }
 
@@ -114,11 +119,12 @@
 
 .form__radio-label {
   cursor: pointer;
+  display: flex;
+  align-items: center;
 
   &:before {
     content: '';
-    display: inline-block;
-    vertical-align: middle;
+    flex-shrink: 0;
     margin-right: 20px;
     width: 34px;
     height: 34px;
@@ -128,6 +134,25 @@
   }
 }
 
+
+.form__checkbox-label {
+  cursor: pointer;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #444;
+    cursor: pointer;
+  }
+}
+
+
+
+//TABLET
 
 @media @tablet {
 
@@ -145,7 +170,8 @@
 
   .form__legend {
     position: absolute;
-    top: 50px;
+    top: 60px;
+    background-color: transparent;
 
     &:after{display: none;}
   }
@@ -177,10 +203,6 @@
 
   .form__label-name {
     margin-right: 20px;
-  }
-
-  .form__legend {
-    background-color: transparent;
   }
 
   .form__footer .form__left-padding {
