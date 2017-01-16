@@ -18,9 +18,11 @@
   <header class="page-header">
     <div class="page-header__inner">
 
-      <div class="logo">
-        <img src="img/logo-mobile.svg" alt="">
-      </div>
+      <picture class="logo">
+        <source media="(min-width: 1050px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img src="img/logo-mobile.svg" alt="Mishka">
+      </picture>
 
 
       <nav class="main-nav  main-nav--hidden">
@@ -112,7 +114,8 @@
           </table>
 
           <picture class="product__descr-pic">
-            <source media="(max-width: 768px)" srcset="img/triple-set-mobile@1x.jpg">
+            <source media="(max-width: 768px)" srcset=
+              "img/triple-set-mobile@1x.jpg 1x, img/triple-set-mobile@2x.jpg 2x">
             <img class="product__img" src="#" width="260" height="315" alt="Красивая вязаная корзинка">
           </picture>
 
@@ -123,7 +126,12 @@
         </div>
 
         <picture class="product__pic">
-          <source media="(min-width: 768px)" srcset="img/triple-set-mobile@1x.jpg">
+          <source media="(min-width: 768px)" srcset="
+            img/triple-set-tablet@1x.jpg 1x,
+            img/triple-set-tablet@2x.jpg 2x">
+          <source media="(min-width: 1200px)" srcset="
+            img/triple-set-desktop@1x.jpg 1x,
+            img/triple-set-desktop@2x.jpg 2x">
           <img class="product__img" src="#" width="260" height="315" alt="Красивая вязаная корзинка">
         </picture>
 
